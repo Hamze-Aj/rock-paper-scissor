@@ -31,39 +31,100 @@ const playerRound = (computerChoice,humanChoice) =>{
 
         humanScore++
         computerScore++
-        return 'the game is tie'
+
+        console.log(computerChoice);
+        
+
+        alert('the game is tie')
         
     }
     else if (computerChoice == 'rock' && humanChoice == 'rock') {
 
         humanScore++
         computerScore++
-        return 'the game is tie'
-        
+        console.log(computerChoice);
+
+         
+        alert('the game is tie')        
     }
     else if (computerChoice == 'scissor' && humanChoice == 'scissor') {
 
         humanScore++
         computerScore++
-        return 'the game is tie'
+        console.log(computerChoice);
+
+        alert('the game is tie')
         
     }
     else if (computerChoice == 'paper' && humanChoice == 'rock') {
         computerScore++
-        return 'the computer won paper beats rock'
+        alert('the computer won paper beats rock')
+        console.log(computerChoice);
+        
         
     }
     else if (computerChoice == 'rock' && humanChoice == 'paper') {
         humanScore++
-        return 'you won paper beats rock'
+        alert('you won paper beats rock')
+        console.log(computerChoice);
+
      
         
     }
-    else  if (computerChoice == 'rock' && humanChoice == 'paper') {
-        humanScore++
-        return 'you won paper beats rock'
+
+    else  if (computerChoice == 'rock' && humanChoice == 'scissor') {
+        computerScore++
+        alert('the computer won rock beats scissor')
+        console.log(computerChoice);
+
+}
+
+else if(computerChoice == 'scissor' && humanChoice == 'rock') {
+    humanScore++
+    alert('you won  rock beats scissor')
+    console.log(computerChoice);
+    
+}
+
+else if(computerChoice == 'paper' && humanChoice == 'scissor') {
+    humanScore++
+    alert('you won  scissor beats paper')
+    console.log(computerChoice);
+    
+}
+
+else if(computerChoice == 'scissor' && humanChoice == 'paper') {
+    computerScore++
+    alert('the computer won  scissor beats paper')
+    console.log(computerChoice);
+    
+}
+
+}
+
+
+const playGame = () =>{
+for (let i = 0; i < 5; i++) {
+    playerRound()
+    
+}
+
+if (humanScore > computerScore) {
+    alert('yey you won the game')
+}
+else if (humanScore === computerScore) {
+    alert('the 5 rounds  endded in tie, how come ? ')
+    
+}
+
+else{
+    alert('sorry the computer won, good luck next time')
 }
 
 
 
+
+}
+
+playGame();
 
