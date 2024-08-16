@@ -1,7 +1,58 @@
-.h1{
+body{
+    background-color: aqua;
+}
+
+
+.countainer{
     display: flex;
+    flex-direction: column;
     height: 900px;
     width: 900px;
-    justify-content: center;
     align-items: center;
+}
+
+.buttons{
+
+    width: 600px;
+    display: flex;
+    flex-grow: 0;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.btn{
+    text-align: center;
+    width: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: larger;
+    font-weight: 700;
+}
+#rock{
+    background-color: brown;
+    color: aliceblue;
+}
+
+#paper{
+    background-color: azure;
+}
+
+#scissor{
+    background-color: chocolate;
+    color: white;
+}
+.humn{
+    background-color:rgb(4, 4, 94);
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.comp{
+    margin-bottom: 20px;
+    background-color:rgb(4, 4, 94);
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
 }
